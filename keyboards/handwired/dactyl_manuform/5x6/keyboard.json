@@ -2,6 +2,7 @@
     "keyboard_name": "Dactyl-Manuform (5x6)",
     "manufacturer": "tshort",
     "maintainer": "qmk",
+    "development_board": "promicro",
     "usb": {
         "vid": "0x444D",
         "pid": "0x3536",
