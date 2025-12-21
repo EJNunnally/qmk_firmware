@@ -3,11 +3,6 @@
 #define BSE 0
 #define LWR 1
 #define RSE 2
-// enum layer_number {
-//     BSE = 0,
-//     LWR,
-//     RSE
-// }
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [BSE] = LAYOUT_5x6(
