@@ -3,6 +3,7 @@
     "manufacturer": "liliums",
     "url": "",
     "maintainer": "liliums",
+    "development_board": "promicro",
     "usb": {
         "vid": "0x04D8",
         "pid": "0xEB2D",
