@@ -15,11 +15,11 @@
         "pin": "D3"
     },
     "features": {
-        "bootmagic": false,
+        "bootmagic": true,
         "command": true,
         "extrakey": true,
         "mousekey": true,
-        "nkro": false
+        "nkro": true
     },
     "qmk": {
         "locking": {
