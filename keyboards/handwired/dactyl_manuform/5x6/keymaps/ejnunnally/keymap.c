@@ -1,4 +1,5 @@
 #include QMK_KEYBOARD_H
+// make handwired/dactyl_manuform/5x6:ejnunnally:uf2-split-left -e CONVERT_TO=elite_pi
 
 #define BSE 0
 #define LWR 1
