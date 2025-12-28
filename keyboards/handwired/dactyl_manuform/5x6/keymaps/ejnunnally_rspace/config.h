@@ -40,3 +40,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MK_W_INTERVAL_1 120
 #define MK_W_OFFSET_2 1
 #define MK_W_INTERVAL_2 20
+
+// enables bootloader keys
+#define BOOTMAGIC_ROW 0
+#define BOOTMAGIC_COLUMN 0
+#define BOOTMAGIC_ROW_RIGHT 6
+#define BOOTMAGIC_COLUMN_RIGHT 5
+
+// enables handedness
+#define EE_HANDS
