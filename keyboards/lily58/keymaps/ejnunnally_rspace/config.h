@@ -64,3 +64,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MK_W_INTERVAL_1 120
 #define MK_W_OFFSET_2 1
 #define MK_W_INTERVAL_2 20
+
+/* Enables handedness */
+#define EE_HANDS
