@@ -8,7 +8,7 @@ enum layer_number {
     QWE,
     QWL,
     QWR
-}
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [BSE] = LAYOUT_5x6(
@@ -39,8 +39,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, MS_BTN2, MS_LEFT, MS_DOWN, MS_RGHT, XXXXXXX,                   XXXXXXX,   KC_P4,   KC_P5,   KC_P6, XXXXXXX, KC_CAPS,
         _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                     KC_P0,   KC_P1,   KC_P2,   KC_P3, KC_PDOT, _______,
                           MS_WHLL, MS_WHLR,                                                       MS_WHLD, MS_WHLU,
-                                            XXXXXXX, XXXXXXX,                   XXXXXXX, _______,
-                                            XXXXXXX, MS_BTN1,                   XXXXXXX, XXXXXXX,
+                                            _______, _______,                   XXXXXXX, _______,
+                                            _______, MS_BTN1,                   XXXXXXX, XXXXXXX,
                                             XXXXXXX, MS_BTN3,                   XXXXXXX, XXXXXXX
     ),
 
@@ -61,8 +61,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX,                   XXXXXXX,   KC_P4,   KC_P5,   KC_P6, XXXXXXX, XXXXXXX,
         _______, XXXXXXX, XXXXXXX, XXXXXXX,  KC_GRV, XXXXXXX,                   XXXXXXX,   KC_P1,   KC_P2,   KC_P3, XXXXXXX, _______,
                           XXXXXXX, XXXXXXX,                                                       XXXXXXX, KC_PDOT,
-                                            _______, XXXXXXX,                     KC_P0, XXXXXXX,
-                                            XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX,
+                                            _______, _______,                     KC_P0, _______,
+                                            _______, XXXXXXX,                   XXXXXXX, XXXXXXX,
                                             XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX
     ),
 
@@ -72,8 +72,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
                           XXXXXXX, XXXXXXX,                                                       XXXXXXX, XXXXXXX,
-                                            XXXXXXX, XXXXXXX,                   XXXXXXX, _______,
+                                            XXXXXXX, _______,                   XXXXXXX, _______,
                                             XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX,
                                             XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX
-    ),
+    )
 };
