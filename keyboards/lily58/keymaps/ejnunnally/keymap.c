@@ -4,11 +4,8 @@ enum layer_number {
     BSE = 0,
     QWE,
     LWR,
-    RSE,
-    LAY
+    RSE
 };
-
-#define LT_ESL LT(LAY, KC_ESC)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -37,19 +34,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             ),
 
     [RSE] = LAYOUT(
-            LT_ESL,  XXXXXXX, XXXXXXX, MS_WHLU, XXXXXXX, XXXXXXX,                    KC_INS, KC_PSCR, KC_SCRL, KC_PAUS, XXXXXXX, XXXXXXX,
+            TO(QWE), XXXXXXX, XXXXXXX, MS_WHLU, XXXXXXX, XXXXXXX,                    KC_INS, KC_PSCR, KC_SCRL, KC_PAUS, XXXXXXX, TO(BSE),
             _______, XXXXXXX, XXXXXXX,   MS_UP, XXXXXXX, MS_ACL0,                    KC_NUM,   KC_P7,   KC_P8,   KC_P9, XXXXXXX, XXXXXXX,
             _______, MS_BTN2, MS_LEFT, MS_DOWN, MS_RGHT, MS_ACL1,                   XXXXXXX,   KC_P4,   KC_P5,   KC_P6, XXXXXXX, KC_CAPS,
             _______, XXXXXXX, XXXXXXX, MS_WHLD, XXXXXXX, MS_ACL2, MS_BTN3, _______,   KC_P0,   KC_P1,   KC_P2,   KC_P3, KC_PDOT, _______,
             _______, _______, _______, MS_BTN1, _______, _______, _______, _______
-            ),
-
-    [LAY] = LAYOUT( // esc-1 is qwerty, esc-2 is dvorak
-            _______, TO(QWE), TO(BSE), XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
             )
 
 };
@@ -79,9 +68,9 @@ bool oled_task_user(void) {
             case RSE:
                 oled_write_P(PSTR("RAISE\n"), false);
                 break;
-            case LAY:
-                oled_write_P(PSTR("LAYER\n"), false);
-                break;
+            // case LAY:
+            //     oled_write_P(PSTR("LAYER\n"), false);
+            //     break;
             default:
                 // Or use the write_ln shortcut over adding '\n' to the end of your string
                 oled_write_ln_P(PSTR("UNDEF\n"), false);
